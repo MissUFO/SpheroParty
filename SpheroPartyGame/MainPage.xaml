@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="SpheroPartyGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SpheroPartyGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="#0094D0">
+        <TextBlock x:Name="SpheroName" HorizontalAlignment="Left" Margin="82,97,0,0" TextWrapping="Wrap" Text="No Sphero Connected" VerticalAlignment="Top" FontSize="24"/>
+        <ToggleSwitch x:Name="ConnectionToggle" HorizontalAlignment="Left" Margin="76,122,0,0" VerticalAlignment="Top" Toggled="ConnectionToggle_Toggled" />
+        <Grid HorizontalAlignment="Center" Height="512" Margin="0,0,0,0" VerticalAlignment="Center" Width="512">
+            <Button Name="startGameBtn" Click="startGameBtn_Click" Content="Start" Height="113"  Width="334" />
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:wb="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="f44fd52e-1ff4-43fa-8225-2aef52f51898" Publisher="CN=smeta_000" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>SpheroPartyGame</DisplayName>
+    <PublisherDisplayName>smeta_000</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="SpheroPartyGame.App">
+      <m2:VisualElements DisplayName="SpheroPartyGame" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="SpheroPartyGame" ForegroundText="light" BackgroundColor="white">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <wb:DeviceCapability Name="bluetooth.rfcomm">
+      <wb:Device Id="any">
+        <wb:Function Type="serviceId:00001101-0000-1000-8000-00805F9B34FB" />
+      </wb:Device>
+    </wb:DeviceCapability>
+  </Capabilities>
+</Package>
